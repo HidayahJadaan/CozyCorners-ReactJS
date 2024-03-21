@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img.png";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import Services from '../services/Services'
+import products from '../assets/data/products'
+import Services from "../services/Services";
+import ProductsList from "../components/UI/ProductsList";
+
 
 export default function Home() {
   const year = new Date().getFullYear();
+const [data, setData] = useState(products);
+
+useEffect(()=>{
+  const filterdProducts = products.filter(item=> item.category === 'chair');
+
+  setData(filterdProducts);
+}, []);
 
   return (
     <Helmet title={"Home"}>
@@ -41,6 +51,27 @@ export default function Home() {
       </section>
 
       <Services />
+      <section className="trending__products">
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center">
+              <h2 className="section__title">Trending Products</h2>
+            </Col>
+            <ProductsList products={data}/>
+          </Row>
+        </Container>
+      </section>
+
+      <section className="best__sales">
+        <Container>
+        <Row>
+            <Col lg="12" className="text-center">
+              <h2 className="section__title">Best Sales</h2>
+            </Col>
+            
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 }

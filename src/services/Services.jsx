@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-// import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import "./services.css";
-import ServiceData from "../assets/data/serviceData";
 import serviceData from "../assets/data/serviceData";
 
 export default function Services() {
@@ -12,7 +11,9 @@ export default function Services() {
         <Row>
           {serviceData.map((item, index) => (
             <Col lg="3" md="4" key={index}>
-              <div className="service_item">
+                <motion.div whileHover={{scale: 1.1}}>
+
+              <div className="service_item" style={{background: `${item.bg}`}}>
                 <span>
                   <i class={item.icon}></i>
                 </span>
@@ -21,6 +22,7 @@ export default function Services() {
                   <p>{item.subtitle}</p>
                 </div>
               </div>
+                </motion.div>
             </Col>
           ))}
         </Row>
