@@ -1,54 +1,54 @@
-import React , {useRef, useCallback, useEffect}from "react";
+import React, { useRef, useEffect } from "react";
 import "./header.css";
 import { Container, Row } from "reactstrap";
 import logo from "../../assets/images/eco-logo.png";
 import { NavLink } from "react-router-dom";
 import userIcon from "../../assets/images/user-icon.png";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
-const nav__links= [
+const nav__links = [
   {
-    path:"home",
-    display:'Home'
+    path: "home",
+    display: "Home",
   },
   {
-    path:"shop",
-    display:'Shop'
+    path: "shop",
+    display: "Shop",
   },
   {
-    path:"cart",
-    display:'Cart'
+    path: "cart",
+    display: "Cart",
   },
-
 ];
 
-
-
 export default function Header() {
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
+  const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+  
+  
+  const stickyHeaderFunc = () => {
 
-const headerRef = useRef(null);
-const menuRef = useRef(null);
-const stickyHeaderFunc = ()=>{
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    });
+  };
 
-  window.addEventListener('scroll', ()=>{
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
+  useEffect(() => {
+    stickyHeaderFunc();
 
-      headerRef.current.classList.add('sticky__header');
-    }else{
-      headerRef.current.classList.remove('sticky__header');
+    return () => window.removeEventListener("scroll", stickyHeaderFunc);
+  });
 
-    }
-  })
-}
-
-useEffect(()=>{
-
-  stickyHeaderFunc();
-
-  return ()=> window.removeEventListener('scroll', stickyHeaderFunc)
-});
-
-const menuToggle = ()=> menuRef.current.classList.toggle('active__menu');
+  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
   return (
     <header className="header" ref={headerRef}>
@@ -57,20 +57,24 @@ const menuToggle = ()=> menuRef.current.classList.toggle('active__menu');
           <div className="nav__wrapper">
             <div className="logo">
               <img src={logo} alt="Logo" />
-            <h1>CozyCorner</h1>
-            {/* <p>Since 1995</p> */}
+              <h1>CozyCorner</h1>
+              {/* <p>Since 1995</p> */}
             </div>
 
-            <div className="navigation"  ref={menuRef} onClick={menuToggle}>
+            <div className="navigation" ref={menuRef} onClick={menuToggle}>
               <ul className="menu">
-               {
-                nav__links.map((item, index) =>(
+                {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <NavLink to={item.path} className={(navClass=>
-                      navClass.isActive ? 'nav__active':'')}>{item.display}</NavLink>
+                    <NavLink
+                      to={item.path}
+                      className={(navClass) =>
+                        navClass.isActive ? "nav__active" : ""
+                      }
+                    >
+                      {item.display}
+                    </NavLink>
                   </li>
-                ))
-               }
+                ))}
               </ul>
             </div>
 
@@ -81,23 +85,24 @@ const menuToggle = ()=> menuRef.current.classList.toggle('active__menu');
               </span>
 
               <span className="cart__icon">
-              <i class="ri-shopping-bag-line"></i>
-              <div className="badge">2</div>
-
+                <i class="ri-shopping-bag-line"></i>
+                <div className="badge">{totalQuantity}</div> 
               </span>
 
               <span>
-                <motion.img whileTap={{scale : 1.2 }} src={userIcon} alt="UserIcon" />
+                <motion.img
+                  whileTap={{ scale: 1.2 }}
+                  src={userIcon}
+                  alt="UserIcon"
+                />
               </span>
 
-              
-            <div className="mobile__menu">
-              <span onClick={menuToggle}><i class="ri-menu-line"></i></span>
+              <div className="mobile__menu">
+                <span onClick={menuToggle}>
+                  <i class="ri-menu-line"></i>
+                </span>
+              </div>
             </div>
-
-            </div>
-
-
           </div>
         </Row>
       </Container>
