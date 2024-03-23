@@ -27,8 +27,8 @@ const nav__links= [
 export default function Header() {
 
 const headerRef = useRef(null);
-const stickyHeaderFunc = ()=>{
 const menuRef = useRef(null);
+const stickyHeaderFunc = ()=>{
 
   window.addEventListener('scroll', ()=>{
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){

@@ -65,6 +65,18 @@
     .hero__content h2{
         font-size: 2rem;
     }
+
+    .section__title{
+        font-size: 1.7rem;
+    }
+
+    .counter__img{
+        display:none;
+    }
+
+    .clock__top-content{
+        text-align: center;
+    }
 }
 
 
@@ -80,6 +92,10 @@
 
     .buy__btn{
         font-size: 0.9rem;
+    }
+
+    .section__title{
+        font-size: 1.4rem;
     }
 }
 
