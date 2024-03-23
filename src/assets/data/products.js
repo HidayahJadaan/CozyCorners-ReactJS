@@ -12,21 +12,31 @@ import productImg08 from "../images/arm-chair-02.jpg";
 import productImg09 from "../images/arm-chair-03.jpg";
 import productImg10 from "../images/arm-chair-01.jpg";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/s1.png";
+import productImg14 from "../images/s2.jpg";
+import productImg15 from "../images/s3.png";
+import productImg16 from "../images/s4.jpg";
+import productImg17 from "../images/s5.png";
+import productImg18 from "../images/s6.png";
+import productImg19 from "../images/s7.jpg";
+import productImg20 from "../images/s8.png";
+import productImg21 from "../images/s9.png";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg22 from "../images/pop1.jpg";
+import productImg23 from "../images/pop2.jpg";
+import productImg24 from "../images/pop3.jpg";
+import productImg25 from "../images/pop4.jpg";
+import productImg26 from "../images/pop5.jpg";
+import productImg27 from "../images/pop6.jpg";
+import productImg28 from "../images/pop7.jpg";
+import productImg29 from "../images/pop8.jpg";
+import productImg30 from "../images/pop9.jpg";
+import productImg31 from "../images/pop10.jpg";
 
-import productImg25 from "../images/wireless-03.png";
+
+
+
 
 const products = [
   {
@@ -96,7 +106,7 @@ const products = [
   {
     id: "26",
     productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
+    imgUrl: productImg03,
     category: "sofa",
     price: 253,
     shortDesc:
@@ -279,7 +289,7 @@ const products = [
     id: "10",
     productName: "Apple iPhone 12 Pro",
     imgUrl: productImg13,
-    category: "mobile",
+    category: "sofaa",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -323,7 +333,7 @@ const products = [
     id: "11",
     productName: "Apple iPhone 12 Max",
     imgUrl: productImg14,
-    category: "mobile",
+    category: "sofaa",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -346,7 +356,7 @@ const products = [
     id: "12",
     productName: "Realme 8",
     imgUrl: productImg15,
-    category: "mobile",
+    category: "sofaa",
     price: 599,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -369,7 +379,7 @@ const products = [
     id: "13",
     productName: "One Plus Nord",
     imgUrl: productImg16,
-    category: "mobile",
+    category: "sofaa",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -392,7 +402,7 @@ const products = [
     id: "14",
     productName: "Apple iPhone 13 Pro",
     imgUrl: productImg17,
-    category: "mobile",
+    category: "sofaa",
     price: 899,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -415,7 +425,7 @@ const products = [
     id: "15",
     productName: "Samsung Galaxy S22",
     imgUrl: productImg18,
-    category: "mobile",
+    category: "sofaa",
     price: 699,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -438,7 +448,7 @@ const products = [
     id: "16",
     productName: "Rolex Watch",
     imgUrl: productImg19,
-    category: "watch",
+    category: "sofaa",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -461,7 +471,7 @@ const products = [
     id: "17",
     productName: "Timex Easy Reader Watch",
     imgUrl: productImg20,
-    category: "watch",
+    category: "sofaa",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -484,7 +494,7 @@ const products = [
     id: "18",
     productName: "Rolex Watch",
     imgUrl: productImg21,
-    category: "watch",
+    category: "sofaa",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -502,13 +512,12 @@ const products = [
     ],
     avgRating: 4.8,
   },
-
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Rolex Watch",
     imgUrl: productImg22,
-    category: "watch",
-    price: 399,
+    category: "pop",
+    price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -525,13 +534,33 @@ const products = [
     ],
     avgRating: 4.8,
   },
-
   {
     id: "20",
-    productName: "Beat Studio Wireless",
+    productName: "Rolex Watch",
     imgUrl: productImg23,
-    category: "wireless",
-    price: 199,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  }, {
+    id: "21",
+    productName: "Rolex Watch",
+    imgUrl: productImg24,
+    category: "pop",
+    price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -548,13 +577,144 @@ const products = [
     ],
     avgRating: 4.8,
   },
-
   {
     id: "22",
-    productName: "Beat EP Headphones",
+    productName: "Rolex Watch",
     imgUrl: productImg25,
-    category: "wireless",
-    price: 199,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "23",
+    productName: "Rolex Watch",
+    imgUrl: productImg26,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "24",
+    productName: "Rolex Watch",
+    imgUrl: productImg27,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "25",
+    productName: "Rolex Watch",
+    imgUrl: productImg28,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "26",
+    productName: "Rolex Watch",
+    imgUrl: productImg29,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "27",
+    productName: "Rolex Watch",
+    imgUrl: productImg30,
+    category: "pop",
+    price: 299,
+    shortDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "32",
+    productName: "Rolex Watch",
+    imgUrl: productImg31,
+    category: "pop",
+    price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
